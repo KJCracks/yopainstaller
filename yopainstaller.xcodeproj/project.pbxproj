@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4428694188B678100C060B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4428693188B678100C060B8 /* Foundation.framework */; };
+		F44286A0188B678100C060B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F442869F188B678100C060B8 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F4428690188B678100C060B8 /* yopainstaller */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = yopainstaller; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4428693188B678100C060B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F4428698188B678100C060B8 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		F4428699188B678100C060B8 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		F442869B188B678100C060B8 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		F442869E188B678100C060B8 /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/bin/0xdeadfa11; sourceTree = "<group>"; };
+		F442869F188B678100C060B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F44286A1188B678100C060B8 /* yopainstaller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "yopainstaller-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F442868D188B678100C060B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4428694188B678100C060B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4428687188B678100C060B8 = {
+			isa = PBXGroup;
+			children = (
+				F4428695188B678100C060B8 /* yopainstaller */,
+				F4428692188B678100C060B8 /* Frameworks */,
+				F4428691188B678100C060B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4428691188B678100C060B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4428690188B678100C060B8 /* yopainstaller */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4428692188B678100C060B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4428693188B678100C060B8 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4428695188B678100C060B8 /* yopainstaller */ = {
+			isa = PBXGroup;
+			children = (
+				F442869F188B678100C060B8 /* main.m */,
+				F4428696188B678100C060B8 /* Package */,
+				F442869A188B678100C060B8 /* Supporting Files */,
+			);
+			path = yopainstaller;
+			sourceTree = "<group>";
+		};
+		F4428696188B678100C060B8 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				F4428697188B678100C060B8 /* DEBIAN */,
+				F442869C188B678100C060B8 /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		F4428697188B678100C060B8 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				F4428698188B678100C060B8 /* control.txt */,
+				F4428699188B678100C060B8 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		F442869A188B678100C060B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F442869B188B678100C060B8 /* PackageVersion.plist */,
+				F44286A1188B678100C060B8 /* yopainstaller-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F442869C188B678100C060B8 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				F442869D188B678100C060B8 /* bin */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		F442869D188B678100C060B8 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				F442869E188B678100C060B8 /* 0xdeadfa11 */,
+			);
+			name = bin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F442868F188B678100C060B8 /* yopainstaller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44286A4188B678100C060B8 /* Build configuration list for PBXNativeTarget "yopainstaller" */;
+			buildPhases = (
+				F442868C188B678100C060B8 /* Sources */,
+				F442868D188B678100C060B8 /* Frameworks */,
+				F442868E188B678100C060B8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = yopainstaller;
+			productName = yopainstaller;
+			productReference = F4428690188B678100C060B8 /* yopainstaller */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4428688188B678100C060B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = F442868B188B678100C060B8 /* Build configuration list for PBXProject "yopainstaller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F4428687188B678100C060B8;
+			productRefGroup = F4428691188B678100C060B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F442868F188B678100C060B8 /* yopainstaller */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F442868E188B678100C060B8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F442868C188B678100C060B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44286A0188B678100C060B8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F44286A2188B678100C060B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		F44286A3188B678100C060B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		F44286A5188B678100C060B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "yopainstaller/yopainstaller-Prefix.pch";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		F44286A6188B678100C060B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "yopainstaller/yopainstaller-Prefix.pch";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F442868B188B678100C060B8 /* Build configuration list for PBXProject "yopainstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44286A2188B678100C060B8 /* Debug */,
+				F44286A3188B678100C060B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F44286A4188B678100C060B8 /* Build configuration list for PBXNativeTarget "yopainstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44286A5188B678100C060B8 /* Debug */,
+				F44286A6188B678100C060B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4428688188B678100C060B8 /* Project object */;
+}

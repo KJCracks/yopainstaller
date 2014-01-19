@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'yopainstaller' target in the 'yopainstaller' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
