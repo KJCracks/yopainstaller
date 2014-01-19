@@ -14,7 +14,6 @@
 /* Begin PBXFileReference section */
 		F4428690188B678100C060B8 /* yopainstaller */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = yopainstaller; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4428693188B678100C060B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		F4428698188B678100C060B8 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
 		F4428699188B678100C060B8 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		F442869B188B678100C060B8 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		F442869E188B678100C060B8 /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/bin/0xdeadfa11; sourceTree = "<group>"; };
@@ -81,7 +80,6 @@
 		F4428697188B678100C060B8 /* DEBIAN */ = {
 			isa = PBXGroup;
 			children = (
-				F4428698188B678100C060B8 /* control.txt */,
 				F4428699188B678100C060B8 /* control */,
 			);
 			name = DEBIAN;
@@ -208,7 +206,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -234,7 +232,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
